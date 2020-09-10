@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="JourneyPlanner" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="383.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="journeyplanner.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="88.0" fitWidth="110.0" layoutX="138.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Journey%20Planner.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="arrival" focusColor="#2d3447" layoutX="83.0" layoutY="164.0" maxWidth="162.0" minWidth="136.0" prefHeight="35.0" prefWidth="143.0" promptText="      Select Station" style="-fx-background-color: #ffffff;" unFocusColor="#a0a2ab">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="end" focusColor="#2d3447" layoutX="83.0" layoutY="215.0" maxWidth="152.0" minWidth="136.0" prefHeight="35.0" prefWidth="143.0" promptText="      Select Station" style="-fx-background-color: #ffffff;" unFocusColor="#a0a2ab">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="21.0" layoutY="173.0" text="Departure:" textFill="#a0a2ab">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="224.0" text="Arrival:" textFill="#a0a2ab">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="103.0" prefHeight="20.0" prefWidth="352.0" text="The Fast times are from          to         and          to          " textAlignment="CENTER" textFill="#d66363">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="output" editable="false" focusColor="#2d3447" layoutX="12.0" layoutY="262.0" maxWidth="531.0" minWidth="352.0" prefHeight="374.0" prefWidth="358.0" unFocusColor="#a0a2ab">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="btn_search" layoutX="277.0" layoutY="169.0" onAction="#btn_clickSearch" style="-fx-background-color: #151928;" text="Find Route" textFill="#a0a2ab">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="277.0" layoutY="220.0" onAction="#resetText" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #151928;" text="Reset" textFill="#a0a2ab">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="mapbutton" layoutX="277.0" layoutY="11.0" text="Open Map" textFill="#8babe0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="350.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/149224%20grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="241.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/149401%20grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="241.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/503824%20grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="89.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/149237%20grey.png" />
+         </image>
+      </ImageView>
+      <JFXToggleButton fx:id="toggle" layoutX="207.0" layoutY="113.0" prefHeight="36.0" prefWidth="78.0" text="ToggleButton" toggleColor="#2f0ea8" toggleLineColor="#b90e0e" unToggleLineColor="BLACK" />
+      <Label layoutX="121.0" layoutY="134.0" text="Toggle Fast Time" textFill="#a0a2ab">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="103.0" prefHeight="20.0" prefWidth="37.0" text="9AM " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="103.0" prefHeight="20.0" prefWidth="37.0" text=" 4PM " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="103.0" prefHeight="20.0" prefWidth="37.0" text="7PM " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="103.0" prefHeight="20.0" prefWidth="43.0" text="12AM " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
